@@ -1,0 +1,77 @@
+<!--Note: repl.it is still not working at the moment I submitted this, -->
+<!--check the css min-width= 800 not 648, which is what is displaying at the moment-->
+
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="gamer quiz, gaming knowledge">
+    <title>Gamer Knowledge Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header role="banner">
+      <div class="container-fluid">
+        <div class="row row-1">
+          <div class="col-8-lg">
+            <div class="well">
+              <h1 class="head">So you think you're a <span id="heading-gamer">Gamer?</span></h1>
+            </div>
+          </div>
+        </div>
+        <div class="row row-2">
+          <div class="col-2 pull-left stat-box">
+            <div class="well">
+              <p>Level <span class="test-question-number"></span>/10</p>
+            </div>
+          </div>
+          <div class="col-2 pull-right stat-box">
+            <div class="well">
+              <p class="xp-bar">XP:<span id="score"></span>/1000xp</p>
+            </div>
+          </div>
+          <div class="col-2 pull-right stat-box">
+            <div class="well hp-bar">
+              <p>Lives:<span id="health-bar"></span>/6</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </header>
+    <main role="main">
+      <section role="region">
+        <div class="container-fluid start-box">
+          <div class="start-page well">  
+            <h2 class="start-q">So you're thinking that you have been playing games for a while? Let's find out.</h2>
+            <button type="submit" class="start-b button" id="start-button">Enter Level 1</button>
+          </div>
+        </div>
+      </section>
+      <section role="region">
+        <div id="question-box">
+        </div>
+      </section>
+    </main>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="questions.js"></script>
+  <script src="rank.js"></script>
+  <script src="index.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
